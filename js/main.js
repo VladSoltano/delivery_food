@@ -95,7 +95,7 @@ function isValidate(input, valide, name) {
     } else {
         input.style.border = '1px solid #b93b3b';
         input.style.background = "#ffcac7";
-        div_error.textContent = `Неправельный введенный ${name}`;
+        div_error.textContent = `Неправельный введенный ${name == 'login' ? name + " на пример: 'example@gmail.com'" : name}`;
         return false;
     }
 }
